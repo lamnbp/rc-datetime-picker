@@ -1,6 +1,6 @@
 {
-  "name": "rc-datetime-picker",
-  "version": "1.6.1",
+  "name": "hrw-datetime-picker",
+  "version": "1.0.0",
   "description": "React datetime picker by momentjs",
   "main": "dist/rc-datetime-picker.cjs.js",
   "keywords": [
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AllenWooooo/rc-datetime-picker.git"
+    "url": "git+https://github.com/lamnbp/rc-datetime-picker.git"
   },
   "author": "Allen Wu <mangong33@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AllenWooooo/rc-datetime-picker/issues"
+    "url": "https://github.com/lamnbp/rc-datetime-picker/issues"
   },
-  "homepage": "https://github.com/AllenWooooo/rc-datetime-picker#readme",
+  "homepage": "https://github.com/lamnbp/rc-datetime-picker#readme",
   "dependencies": {
     "blacklist": "^1.1.4",
     "classnames": "^2.2.5",

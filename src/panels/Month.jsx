@@ -45,7 +45,7 @@ class Month extends Component {
     const now = moment();
     const _moment = this.state.moment;
     const {maxDate, minDate, months, selected, range, rangeAt, dateLimit} = this.props;
-    const currentMonth = _moment.clone().month(month);
+    const currentMonth = _moment.clone().month(idx + row * 3);
     const start = selected && range 
       ? (selected.start ? currentMonth.isSame(selected.start, 'month') : false) 
       : false; 
@@ -110,7 +110,7 @@ class Month extends Component {
       <td 
         key={month} 
         className={className} 
-        onClick={this.select.bind(this, month, isDisabled)}>
+        onClick={this.select.bind(this, idx + row * 3, isDisabled)}>
         {months ? months[idx + row * 3] : month}
       </td>
     );
