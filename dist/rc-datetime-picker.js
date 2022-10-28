@@ -377,7 +377,7 @@ var Month = function (_Component) {
           rangeAt = _this$props.rangeAt,
           dateLimit = _this$props.dateLimit;
 
-      var currentMonth = _moment.clone().month(month);
+      var currentMonth = _moment.clone().month(idx + row * 3);
       var start = selected && range$$1 ? selected.start ? currentMonth.isSame(selected.start, 'month') : false : false;
       var end = selected && range$$1 ? selected.end ? currentMonth.isSame(selected.end, 'month') : false : false;
       var between = selected && range$$1 ? selected.start && selected.end ? currentMonth.isBetween(selected.start, selected.end, 'month') : false : false;
@@ -432,7 +432,7 @@ var Month = function (_Component) {
         {
           key: month,
           className: className,
-          onClick: _this.select.bind(_this, month, isDisabled) },
+          onClick: _this.select.bind(_this, idx + row * 3, isDisabled) },
         months ? months[idx + row * 3] : month
       );
     };
