@@ -141,7 +141,7 @@ class Day extends Component {
     const endOfThisMonth = _moment.clone().endOf('month').date();
     const endOfLastMonth = _moment.clone().subtract(1, 'month').endOf('month').date();
     const days = [].concat(
-      arrayRange(endOfLastMonth - (firstDay == 0 ? 7 : firstDay) + 1, endOfLastMonth),
+      arrayRange(endOfLastMonth - (firstDay == 0 ? 7 : firstDay) + 2, endOfLastMonth+1),
       arrayRange(1, endOfThisMonth + 1),
       arrayRange(1, 42 - endOfThisMonth - (firstDay == 0 ? 7 : firstDay) + 1)
     );
